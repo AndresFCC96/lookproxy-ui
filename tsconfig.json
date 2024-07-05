@@ -1,12 +1,13 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts"],
   "compilerOptions": {
     "allowJs": true,
     "target": "ES2022",
     "lib": ["es2017"],
     "ignoreDeprecations": "5.0",
     "noImplicitAny": false,
+    "types": ["jest", "node"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
